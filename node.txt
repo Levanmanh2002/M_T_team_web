@@ -10,4 +10,7 @@ manage
     + git
 
 command
-    + ...
+    - upload source code to git
+        + git add .
+        + git commit -m "commit"
+        + git push -fource
