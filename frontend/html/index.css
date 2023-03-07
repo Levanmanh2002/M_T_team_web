@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    --text--menu--width: 16vw;
+    --text--full: 100%;
+    --text--color--important: #FEFBF6;
+    --text--none: none;
+    --text--background--menu:rgb(102, 67, 105); 
+    --text--height--slider: 100vh;
+    --text--menu--color--font: #A6D1E6;
+    --text--color--logo: #79DAE8;
+    font-size: 16px;
+    --text--line--li: 22px;
+}
+
+body{
+    display: flex;
+
+}
+
+#menu .nav {
+    width: var(--text--full);
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#menu .nav > li { 
+    width: var(--text--full);
+    height: 16%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 100px;
+    
+}
+
+#menu .nav > li > a{ 
+    width: 20vw;
+    line-height: var(--text--line--li);
+}
+
+#menu .nav > li > a::after{ 
+    content: "";
+    background-color: var(--text--menu--color--font);
+    width: 1vw;
+    height: 3px;
+    display: block;
+    margin-left: 105px;
+
+}
+
+#menu .nav > li > i{ 
+    margin-top: 12px;
+    font-size: 3.75rem;
+    color: var(--text--menu--color--font);
+}
+
+
+
+#menu .nav > li a:hover::after{
+    width: 4vw;
+    transform: 1.4s;
+}
+
+#menu .logo {
+    font-size: 2.25rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#menu .logo__background {
+    margin: -9.6vh 0 0 -3vw;
+    display: block;
+    position:absolute;
+}
+
+#menu .nav > li > a:hover, 
+#menu .nav .list__items .list-active
+    {
+    color: var(--text--menu--color--font);
+}
+
+#slide{
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    background-color: aquamarine;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#slide .search{
+    width: 580px;
+    height: 30px;
+    border: 2px solid black;   
+    margin-top: 20px;   
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+#slide .background_slide{
+    width: 580px;
+    height: 500px;
+    border: 2px solid black;
+    background-image: url(../img/avt5.jpg);
+    background-size: cover;
+}
+
+
+
+#slide .audio{
+    width: 580px;
+    height: 30px;
+    border: 2px solid black;   
+    margin-top: 40px;
+   
+}
+
+
+#login_nav{
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    background-color:coral;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login_nav .main_login{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#login_nav .main_login .login{
+    padding: 8px;
+    margin: 12px 12px;
+    border-radius: 10px;
+}
+
+#login_nav .main_login .avt{
+    border: 2px solid palegreen;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    
+    
+   
+}
+
+
+#login_nav .list_history{
+    
+    width: 28vh;
+    height: 60vh;
+    border: 2px solid black;
+
+    
+}

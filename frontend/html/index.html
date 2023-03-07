@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Chào mừng đến với trang web của chúng tôi!</title>
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
-      
-      h1 {
-        font-size: 3em;
-        color: #333;
-        margin-top: 2em;
-      }
-      
-      p {
-        font-size: 1.5em;
-        color: #666;
-        margin-top: 1em;
-      }
-      
-      button {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 1.2em;
-        padding: 0.8em 1.2em;
-        border: none;
-        border-radius: 4px;
-        margin-top: 2em; 
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Chào mừng đến với trang web của chúng tôi!</h1>
-    <p>Chúng tôi rất vui mừng được chào đón bạn đến với trang web của chúng tôi. Hãy khám phá và tìm hiểu thêm về chúng tôi.</p>
-    <button>Bắt đầu ngay</button>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicTM</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div id="menu">
+        <ul class="nav">
+            <li class="Logo menu__no__hover">
+                    <p class="logo">Music TM
+                        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                        <lord-icon class="logo__background" src="https://cdn.lordicon.com/wdsjwhje.json" trigger="loop" delay="200" colors="outline:#A6D1E6" style="width:12vw;height:100px">
+                        </lord-icon>
+                    </p>
+            </li>
+            <li class="list__items list-active row">
+                <a href="#Home" class="Home ">
+                    <i class="fa-solid fa-house-chimney list__icon"></i>
+                    Cá nhân</a>
+            </li>
+            <li class="list__items row">
+                <a href="#About" class="About">
+                    <i class="fa-solid fa-address-card list__icon"></i>
+                    Album</a>
+            </li>
+            <li class="list__items row">
+                <a href="#Services" class="Services">
+                    <i class="fa-solid fa-list-ul list__icon"></i>
+                    Thịnh hành</a>
+            </li>
+            <li class="list__items row">
+                <a href="#Portflio" class="Portflio">
+                    <i class="fa-solid fa-file-powerpoint list__icon"></i>
+                    Bạn bè</a>
+            </li>
+            <li class="list__items row">
+                <a href="#Contact" class="Contact">
+                    <i class="fa-solid fa-comments list__icon"></i>
+                    Cài đặt</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- Thanh menu giữa -->
+        <div id="slide">
+            <div class="search">
+            </div>
+            <div class="background_slide">
+            </div>
+            <div class="audio">
+            </div>
+        </div>
+        <!-- Thanh login -->
+        <div id="login_nav">
+            <div class="main_login">
+              <a href="./login/login.html">
+                <button class="login">Đăng nhập</button>
+              </a>
+              <a href="./register/register.html">
+                <button class="login">Đăng ký</button>
+              </a>
+                <img class="avt" src="../assets/images/avatar.jpg" alt="">
+            </div>
+            <div class="list_history">
+            </div>
+        </div>
+</body>
 </html>

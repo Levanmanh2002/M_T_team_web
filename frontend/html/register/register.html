@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký tài khoản</title>
+  <link rel="stylesheet" href="./register.css">
+  <script src="../js/checkAgree.js"></script>
+  <script>
+    function checkAgree() {
+      var agreeBox = document.getElementById("agree");
+      var submitBtn = document.getElementById("submitBtn");
+      if (agreeBox.checked) {
+        submitBtn.style.display = "block";
+      } else {
+        submitBtn.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+	<div class="container">
+        <div class="profile-wrapper">
+            <img class="cover-photo" src="../../assets/images/avatar.jpg" alt="Cover Photo">
+            <div class="avatar-wrapper">
+                <img class="avatar" src="../../assets/images/avatar.jpg" alt="Avatar">
+            </div>
+        </div>
+		<h1>Đăng ký tài khoản</h1>
+		<form>
+			<label for="name">Họ và tên:</label>
+			<input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Nhập email">
+
+			<label for="phone">Số điện thoại:</label>
+			<input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+
+			<label for="password">Mật khẩu:</label>
+			<input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+
+			<label for="dateOfBirth">Ngày sinh:</label>
+			<input type="date" id="dateOfBirth" name="dateOfBirth">
+
+			<label for="sex">Giới tính:</label>
+        <select id="sex" name="sex">
+          <option value="male">Nam</option>
+          <option value="female">Nữ</option>
+          <option value="other">Khác</option>
+        </select>
+    
+        <div class="checkbox">
+          <input type="checkbox" id="agree" name="agree" label for="agree">Tôi đồng ý với các điều khoản và điều kiện</label>
+        </div>
+    
+        <input type="submit" id="submitBtn" value="Đăng ký" onClick="checkAgree()">
+      </form>
+    </div>
+</body>
+</html>
+ 

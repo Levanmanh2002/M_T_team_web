@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" href="./login.css">
+</head>
+<body>
+	<div class="container">
+        <form id="login-form" class="form" method="post">
+            <h2 class="form-title">Log in</h2>
+            <div class="form-inputs">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-input" placeholder="Enter your email" required>
+            </div>
+            <div class="form-inputs">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" name="password" class="form-input" placeholder="Enter your password" required>
+            </div>
+            <div class="form-inputs">
+                <label for="save-password-checkbox">
+                    <input type="checkbox" id="save-password-checkbox" name="save-password-checkbox"> Lưu mật khẩu
+                  </label>
+                  
+            </div>
+            <button type="submit" class="form-btn">Log in</button>
+        </form>
+    </div>
+    <script src="../../js/js.js"></script>
+</body>
+</html>
