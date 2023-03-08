@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicTM</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -14,33 +16,33 @@
             <li class="Logo menu__no__hover">
                     <p class="logo">Music TM
                         <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                        <lord-icon class="logo__background" src="https://cdn.lordicon.com/wdsjwhje.json" trigger="loop" delay="200" colors="outline:#A6D1E6" style="width:12vw;height:100px">
+                        <lord-icon class="logo__background" src="https://cdn.lordicon.com/wdsjwhje.json" trigger="loop" delay="200" colors="outline:#A6D1E6" style="width:12vw;height:100px">   
                         </lord-icon>
                     </p>
             </li>
             <li class="list__items list-active row">
                 <a href="#Home" class="Home ">
-                    <i class="fa-solid fa-house-chimney list__icon"></i>
+                    <i class='bx bx-doughnut-chart'></i>
                     Cá nhân</a>
             </li>
             <li class="list__items row">
                 <a href="#About" class="About">
-                    <i class="fa-solid fa-address-card list__icon"></i>
+                    <i class='bx bxs-playlist' ></i>
                     Album</a>
             </li>
             <li class="list__items row">
                 <a href="#Services" class="Services">
-                    <i class="fa-solid fa-list-ul list__icon"></i>
+                    <i class='bx bx-trending-up' ></i>
                     Thịnh hành</a>
             </li>
             <li class="list__items row">
                 <a href="#Portflio" class="Portflio">
-                    <i class="fa-solid fa-file-powerpoint list__icon"></i>
+                    <i class='bx bxs-user-detail'></i>
                     Bạn bè</a>
             </li>
             <li class="list__items row">
                 <a href="#Contact" class="Contact">
-                    <i class="fa-solid fa-comments list__icon"></i>
+                    <i class='bx bx-cog' ></i>
                     Cài đặt</a>
             </li>
         </ul>
@@ -49,10 +51,21 @@
         <!-- Thanh menu giữa -->
         <div id="slide">
             <div class="search">
+                <form style="position: relative;">
+                    
+                    <input type="text" placeholder="Tìm kiếm bài hát..." >
+                     <i class='bx bx-search' style="position: absolute;right: 0;margin-right: 10px;"></i>
+                  </form>
+                  
+                  
             </div>
             <div class="background_slide">
             </div>
             <div class="audio">
+                <audio controls>
+                    <source id="audio_menu" src="your-audio-file.mp3" type="audio/mpeg" >
+                   
+                  </audio>
             </div>
         </div>
         <!-- Thanh login -->
@@ -66,7 +79,16 @@
               </a>
                 <img class="avt" src="../assets/images/avatar.jpg" alt="">
             </div>
-            <div class="list_history">
+            <div class="history">
+                <div class="title_history">
+                    <p>Lịch sử phát</p>
+                </div>
+
+                <div class="list_history">
+
+                </div>
+
+
             </div>
         </div>
 </body>
