@@ -24,8 +24,29 @@ $(function()
 		artist: "Dig Didzay",
 		name: "Nếu Anh Đi (Cover)",
 		url: "../assets/Musics/NeuAnhDi.mp3",
-		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
-	}];
+		picture: "../assets/images/neuemdi.jpg",
+	},
+    {
+		artist: "Huy Vạc",
+		name: "ChanhLongThuongCo2",
+		url: "../assets/Musics/ChanhLongThuongCo2.mp3",
+		picture: "../assets/images/neuemdi.jpg",
+	},
+    {
+		artist: "X2X",
+		name: "CoGiangTinh",
+		url: "../assets/Musics/CoGiangTinh.mp3",
+		picture: "../assets/images/neuemdi.jpg",
+	},
+    {
+		artist: "Yan Nguyen",
+		name: "ItNhungDaiLau",
+		url: "../assets/Musics/ItNhungDaiLau.mp3",
+		picture: "../assets/images/neuemdi.jpg",
+	}
+
+
+];
 	
 	function shuffle(a) {
 		var j, x, i;
@@ -263,3 +284,4 @@ $(function()
     
 	initPlayer();
 });
+
